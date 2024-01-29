@@ -1,0 +1,42 @@
+@font-face {
+	font-display: swap;
+	font-style: normal;
+	src: url("./fonts/MontserratRomanBold.ttf");
+	font-family: "Montserrat";
+	font-weight: 700;
+}
+@font-face {
+	font-display: swap;
+	font-style: normal;
+	src: url("./fonts/MontserratRomanLight.ttf");
+	font-family: "Montserrat";
+	font-weight: 300;
+}
+@font-face {
+	font-display: swap;
+	font-style: normal;
+	src: url("./fonts/MontserratRomanRegular.ttf");
+	font-family: "Montserrat";
+	font-weight: 400;
+}
+@font-face {
+	font-display: swap;
+	font-style: normal;
+	src: url("./fonts/MontserratBold.ttf");
+	font-family: "Montserrat";
+	font-weight: 700;
+}
+@font-face {
+	font-display: swap;
+	font-style: normal;
+	src: url("./fonts/MontserratMedium.ttf");
+	font-family: "Montserrat";
+	font-weight: 500;
+}
+@font-face {
+	font-display: swap;
+	font-style: normal;
+	src: url("./fonts/MontserratRomanSemiBold.ttf");
+	font-family: "Montserrat";
+	font-weight: 600;
+}

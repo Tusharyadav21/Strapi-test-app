@@ -1,18 +1,30 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
+  mode: "jit",
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./src/**/**/*.{js,ts,jsx,tsx,html,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,html,mdx}",
   ],
+  darkMode: "class",
   theme: {
+    screens: { md: { max: "1050px" }, sm: { max: "550px" } },
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        bluegray: {
+          50: "#e6ebef",
+          600: "#5f6c86",
+          900: "#262b35",
+          "900_99": "#262b3599",
+          "100_4c": "#d8d8d84c",
+        },
+        red: { 700: "#d13329" },
+        blue: { A700: "#0061ff" },
+        black: { "900_0c": "#0000000c" },
+        white: { A700: "#ffffff" },
+        gray: { 50: "#fafcff" },
       },
+      fontFamily: { montserrat: "Montserrat", gilroy: "Gilroy" },
+      boxShadow: { bs: "0px 11px  35px 0px #0000000c" },
     },
   },
-  plugins: [],
-}
+  plugins: [require("@tailwindcss/forms")],
+};
